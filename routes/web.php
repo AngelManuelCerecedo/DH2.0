@@ -50,6 +50,7 @@ Route::get('Proveedores', [ProveedorController::class, 'proveedor'])->name('Prov
 Route::get('Proveedore/Registro', [ProveedorController::class, 'rproveedor'])->name('RProveedores');
 Route::get('Proveedore/Editar/{id}', [ProveedorController::class, 'eproveedor'])->name('EProveedor');
 
+Route::get('logout', 'Auth\LoginController@logout');
 //CLIENTES
 Route::get('Clientes', [ClienteController::class, 'cliente'])->name('Clientes');
 Route::get('Cliente/Registro', [ClienteController::class, 'rcliente'])->name('RClientes');
